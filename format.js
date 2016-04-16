@@ -44,7 +44,7 @@ var DateRegExpBuilder = function () {
         // Years
         yyyy: '[12][0-9]{3}',
         yy: '[0-9]{2}',
-        y: '[0-9]',
+        y: '[1-9][0-9]?[0-9]?[0-9]?',
 
         // Day of week
         EEEE: DAYS.map(ucfirst).join('|'),
@@ -66,20 +66,20 @@ var DateRegExpBuilder = function () {
 
         // Minutes in hour
         mm: '[0-5][0-9]',
-        m: '[1-9]|[1-5][0-9]',
+        m: '[1-5]?[0-9]',
 
         // Milliseconds
         sss: '[0-9]{3}',
 
         // Seconds in minutes
         ss: '[0-5][0-9]',
-        s: '[1-9]|[1-5][0-9]',
+        s: '[1-5]?[0-9]',
 
         // AP/PM
         a: '[aApP][mM]',
 
         // Timezone offset
-        Z: '[+-](?:0[1-9]|1[0-2]):?00'
+        Z: '[+-](?:0[0-9]|1[0-2]):?00'
     };
 
     this.allFormatRexExp =

@@ -10,7 +10,8 @@ DateParser.prototype.test = function (format, dateString) {
 };
 
 DateParser.prototype.match = function (format, dateString) {
-    var formatRegExp = new RegExp(dateFormat.buildRegExpStrongByFormat(format, true));
+    var formatRegExp = new RegExp(dateFormat.buildRegExpStringByFormat(format, true));
+    console.log(formatRegExp);
     return dateString.match(formatRegExp);
 };
 
