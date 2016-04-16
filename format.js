@@ -125,8 +125,8 @@ DateRegExpBuilder.prototype._replaceTokens = function (formatString, shouldGroup
     return formatString;
 };
 
-DateRegExpBuilder.prototype.buildReqExpStringByFormat = function (format, shouldGroup) {
-    return this._replaceTokens(format, shouldGroup);
+DateRegExpBuilder.prototype.buildRegExpStringByFormat = function (format, shouldGroup) {
+    return "^" + this._replaceTokens(format, shouldGroup) + "$";
 };
 
 DateRegExpBuilder.prototype.buildLocaleRegExpStringByFormat = function (format, shouldGroup) {
@@ -134,7 +134,7 @@ DateRegExpBuilder.prototype.buildLocaleRegExpStringByFormat = function (format, 
     Object.keys(this.localizeReqExps).forEach(function (token) {
         format = format.replace(token, self.localizeReqExps[token]);
     });
-    return this.buildReqExpStringByFormat(format, shouldGroup);
+    return this.buildRegExpStringByFormat(format, shouldGroup);
 };
 
 module.exports = new DateRegExpBuilder();
