@@ -12,10 +12,10 @@
   },
   "keywords": [
     "date",
-    "parse",
-    "date",
-    "match",
-    "date"
+    "date parsing",
+    "date matching",
+    "date testing",
+    "date format"
   ],
   "author": "Laszlo Szikszai <sziklaszlo@gmail.com>",
   "license": "MIT",
