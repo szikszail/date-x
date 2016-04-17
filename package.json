@@ -2,7 +2,7 @@
   "name": "date-x",
   "version": "0.1.2",
   "description": "Library to parse date strings to date object.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "istanbul cover --include-all-sources ./node_modules/mocha/bin/_mocha --root ./lib -x ./test/*.js --report lcovonly -- -R spec && cat ./coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },

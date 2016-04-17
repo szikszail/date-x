@@ -1,6 +1,6 @@
 # date-x
 
-[![Build Status](https://travis-ci.org/szikszail/date-x.svg?branch=master)](https://travis-ci.org/szikszail/date-x) [![dependency Status](https://david-dm.org/szikszail/date-x.svg)](https://david-dm.org/szikszail/date-x) [![devDependency Status](https://david-dm.org/szikszail/date-x/dev-status.svg)](https://david-dm.org/szikszail/date-x#info=devDependencies)
+[![Build Status](https://travis-ci.org/szikszail/date-x.svg?branch=master)](https://travis-ci.org/szikszail/date-x) [![dependency Status](https://david-dm.org/szikszail/date-x.svg)](https://david-dm.org/szikszail/date-x) [![devDependency Status](https://david-dm.org/szikszail/date-x/dev-status.svg)](https://david-dm.org/szikszail/date-x#info=devDependencies) [![Coverage Status](https://coveralls.io/repos/github/szikszail/date-x/badge.svg?branch=master)](https://coveralls.io/github/szikszail/date-x?branch=master)
 
 It provides the ability to compare date string with custom date format expression.
 

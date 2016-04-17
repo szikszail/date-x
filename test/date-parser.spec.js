@@ -4,7 +4,7 @@ describe("date-parser", function () {
     var dateParser;
 
     beforeEach(function () {
-        dateParser = require('../index');
+        dateParser = require('../lib/index');
     });
 
     describe("test()", function () {
