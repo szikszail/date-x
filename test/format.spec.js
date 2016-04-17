@@ -1,10 +1,11 @@
 var expect = require('chai').expect;
+var DateFormat = require('../lib/format');
 
 describe("date-parser, formats", function () {
     var formats;
 
     beforeEach(function () {
-        formats = require('../format');
+        formats = new DateFormat();
     });
 
     function getRegExp(format) {
@@ -12,55 +13,114 @@ describe("date-parser, formats", function () {
     }
 
     describe("localizeRegExps", function () {
-        it("(shortTime) should match to short time format, e.g.: 3:45 am", function () {
-            var regExp = getRegExp("shortTime");
-            expect(regExp.test("3:45 am")).to.be.true;
-            expect(regExp.test("03:45 am")).to.be.false;
-            expect(regExp.test("3:45:24 am")).to.be.false;
-        });
+        describe("en", function () {
+            it("(shortTime) should match to short time format, e.g.: 3:45 am", function () {
+                var regExp = getRegExp("shortTime");
+                expect(regExp.test("3:45 am")).to.be.true;
+                expect(regExp.test("03:45 am")).to.be.false;
+                expect(regExp.test("3:45:24 am")).to.be.false;
+            });
 
-        it("(mediumTime) should match to medium time format, e.g.: 3:45:23 am", function () {
-            var regExp = getRegExp("mediumTime");
-            expect(regExp.test("3:45 am")).to.be.false;
-            expect(regExp.test("03:45 am")).to.be.false;
-            expect(regExp.test("3:45:23 am")).to.be.true;
-            expect(regExp.test("03:45:23 am")).to.be.false;
-        });
+            it("(mediumTime) should match to medium time format, e.g.: 3:45:23 am", function () {
+                var regExp = getRegExp("mediumTime");
+                expect(regExp.test("3:45 am")).to.be.false;
+                expect(regExp.test("03:45 am")).to.be.false;
+                expect(regExp.test("3:45:23 am")).to.be.true;
+                expect(regExp.test("03:45:23 am")).to.be.false;
+            });
 
-        it("(shortDate) should match to short date format, e.g.: 2/3/16", function () {
-            var regExp = getRegExp("shortDate");
-            expect(regExp.test("2/3/16")).to.be.true;
-            expect(regExp.test("02/03/2016")).to.be.false;
-        });
+            it("(shortDate) should match to short date format, e.g.: 2/3/16", function () {
+                var regExp = getRegExp("shortDate");
+                expect(regExp.test("2/3/16")).to.be.true;
+                expect(regExp.test("02/03/2016")).to.be.false;
+            });
 
-        it("(mediumDate) should match to medium date format, e.g.: Jan 2, 2016", function () {
-            var regExp = getRegExp("mediumDate");
-            expect(regExp.test("Jan 2, 2016")).to.be.true;
-            expect(regExp.test("January 02, 2016")).to.be.false;
-        });
+            it("(mediumDate) should match to medium date format, e.g.: Jan 2, 2016", function () {
+                var regExp = getRegExp("mediumDate");
+                expect(regExp.test("Jan 2, 2016")).to.be.true;
+                expect(regExp.test("January 02, 2016")).to.be.false;
+            });
 
-        it("(longDate) should match to long date format, e.g.: January 2, 2016", function () {
-            var regExp = getRegExp("longDate");
-            expect(regExp.test("January 2, 2016")).to.be.true;
-            expect(regExp.test("Janu 02, 2016")).to.be.false;
-        });
+            it("(longDate) should match to long date format, e.g.: January 2, 2016", function () {
+                var regExp = getRegExp("longDate");
+                expect(regExp.test("January 2, 2016")).to.be.true;
+                expect(regExp.test("Janu 02, 2016")).to.be.false;
+            });
 
-        it("(fullDate) should match to full date format, e.g.: Monday, January 2, 2016", function () {
-            var regExp = getRegExp("fullDate");
-            expect(regExp.test("Monday, January 2, 2016")).to.be.true;
-            expect(regExp.test("Mon, Jan 02, 2016")).to.be.false;
-        });
+            it("(fullDate) should match to full date format, e.g.: Monday, January 2, 2016", function () {
+                var regExp = getRegExp("fullDate");
+                expect(regExp.test("Monday, January 2, 2016")).to.be.true;
+                expect(regExp.test("Mon, Jan 02, 2016")).to.be.false;
+            });
 
-        it("(short) should match to short date time format, e.g.: 2/3/16 3:45 am", function () {
-            var regExp = getRegExp("short");
-            expect(regExp.test("2/3/16 3:45 am")).to.be.true;
-            expect(regExp.test("02/03/2016 03:45")).to.be.false;
-        });
+            it("(short) should match to short date time format, e.g.: 2/3/16 3:45 am", function () {
+                var regExp = getRegExp("short");
+                expect(regExp.test("2/3/16 3:45 am")).to.be.true;
+                expect(regExp.test("02/03/2016 03:45")).to.be.false;
+            });
 
-        it("(medium) should match to medium date time format, e.g.: Jan 2, 2016 03:45:23 am", function () {
-            var regExp = getRegExp("medium");
-            expect(regExp.test("Jan 2, 2016 03:45:23 am")).to.be.true;
-            expect(regExp.test("January 02, 2016 3:45 am")).to.be.false;
+            it("(medium) should match to medium date time format, e.g.: Jan 2, 2016 03:45:23 am", function () {
+                var regExp = getRegExp("medium");
+                expect(regExp.test("Jan 2, 2016 03:45:23 am")).to.be.true;
+                expect(regExp.test("January 02, 2016 3:45 am")).to.be.false;
+            });
+        });
+        
+        describe("hu", function () {
+            beforeEach(function() {
+                formats = new DateFormat('hu');
+            });
+            
+            it("(shortTime) should match to short time format, e.g.: 03:45", function () {
+                var regExp = getRegExp("shortTime");
+                expect(regExp.test("03:45")).to.be.true;
+                expect(regExp.test("03:45 am")).to.be.false;
+                expect(regExp.test("03:45:24")).to.be.false;
+            });
+
+            it("(mediumTime) should match to medium time format, e.g.: 03:45:23", function () {
+                var regExp = getRegExp("mediumTime");
+                expect(regExp.test("03:45")).to.be.false;
+                expect(regExp.test("03:45 am")).to.be.false;
+                expect(regExp.test("03:45:23")).to.be.true;
+                expect(regExp.test("03:45:23 am")).to.be.false;
+            });
+
+            it("(shortDate) should match to short date format, e.g.: 2016. 2. 3.", function () {
+                var regExp = getRegExp("shortDate");
+                expect(regExp.test("2016. 2. 3.")).to.be.true;
+                expect(regExp.test("2016. 02. 03.")).to.be.false;
+            });
+
+            it("(mediumDate) should match to medium date format, e.g.: 2016. Jan. 2.", function () {
+                var regExp = getRegExp("mediumDate");
+                expect(regExp.test("2016. Jan. 2.")).to.be.true;
+                expect(regExp.test("2016. Január 2.")).to.be.false;
+            });
+
+            it("(longDate) should match to long date format, e.g.: 2016. Január 2.", function () {
+                var regExp = getRegExp("longDate");
+                expect(regExp.test("2016. Január 2.")).to.be.true;
+                expect(regExp.test("2016. Jan. 2.")).to.be.false;
+            });
+
+            it("(fullDate) should match to full date format, e.g.: 2016. Január 2., Hétfő", function () {
+                var regExp = getRegExp("fullDate");
+                expect(regExp.test("2016. Január 2., Hétfő")).to.be.true;
+                expect(regExp.test("2016. Jan. 2. Hét.")).to.be.false;
+            });
+
+            it("(short) should match to short date time format, e.g.: 2016. 2. 3. 03:45", function () {
+                var regExp = getRegExp("short");
+                expect(regExp.test("2016. 2. 3. 03:45")).to.be.true;
+                expect(regExp.test("2016. 02. 03. 03:45:52")).to.be.false;
+            });
+
+            it("(medium) should match to medium date time format, e.g.: 2016. Jan. 3. 03:45:23", function () {
+                var regExp = getRegExp("medium");
+                expect(regExp.test("2016. Jan. 3. 03:45:23")).to.be.true;
+                expect(regExp.test("2016. Január 3. 3:45:23")).to.be.false;
+            });
         });
     });
 
@@ -153,6 +213,13 @@ describe("date-parser, formats", function () {
                 expect(regExp.test("Monday")).to.be.false;
                 expect(regExp.test("mon")).to.be.false;
                 expect(regExp.test("hét")).to.be.false;
+            });
+            
+            it("(RRRR) should match to relative day names", function () {
+                var regExp = getRegExp("RRRR");
+                expect(regExp.test("Yesterday")).to.be.true;
+                expect(regExp.test("yesterday")).to.be.false;
+                expect(regExp.test("Monday")).to.be.false; 
             });
 
             it("(dd) should match to padded day of the month", function () {
