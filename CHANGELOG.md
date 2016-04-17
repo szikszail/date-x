@@ -29,8 +29,10 @@
     
 - Completed date format tokens with **RRRR** to match for relative day markers, like: yesterday, today, tomorrow.
 - Support for localized matching. The default locale is EN.
+
   Supported locales:
-  || Code || Name ||
+  | Code | Name |
+  |------|------|
   | EN | English (default) |
   | HU | Hungarian |
   | NL | Dutch |
