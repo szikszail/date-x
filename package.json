@@ -1,6 +1,6 @@
 {
   "name": "date-x",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Library to parse date strings to date object.",
   "main": "index.js",
   "scripts": {
