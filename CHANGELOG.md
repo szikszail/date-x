@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.3
+
+### Contribution
+
+- Added test coverage measurement (istanbul)
+
 ## 0.1.2
 
 ### Features
