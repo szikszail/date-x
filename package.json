@@ -1,5 +1,5 @@
 {
-  "name": "date-parser",
+  "name": "date-x",
   "version": "0.1.1",
   "description": "Library to parse date strings to date object.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/szikszail/date-parser.git"
+    "url": "git+https://github.com/szikszail/date-x.git"
   },
   "keywords": [
     "date",
@@ -20,9 +20,9 @@
   "author": "Laszlo Szikszai <sziklaszlo@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/szikszail/date-parser/issues"
+    "url": "https://github.com/szikszail/date-x/issues"
   },
-  "homepage": "https://github.com/szikszail/date-parser#readme",
+  "homepage": "https://github.com/szikszail/date-x#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5"

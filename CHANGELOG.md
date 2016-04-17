@@ -1,29 +1,29 @@
 # Changelog
 
-## 0.1.1
+## 0.1.2
 
 ### Features
 
 - Testing dates with custom date format:
 
     ```javascript
-    var dateParser = require('date-parser');
-    dateParser.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32"); // true
-    dateParser.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32"); // false
+    var dateX = require('date-x');
+    dateX.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32"); // true
+    dateX.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32"); // false
     ```
     
 - Matching date with custom date format:
 
     ```javascript
-    var dateParser = require('date-parser');
-    var m1 = dateParser.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32");
+    var dateX = require('date-x');
+    var m1 = dateX.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32");
     // m1: [
     //   '03/12/2016 11:11:32',
     //   '03', '12', '2016',
     //   '11', '11', '32',
     //   index: 0, ...
     // ]
-    var m2 = dateParser.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32");
+    var m2 = dateX.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32");
     // m2: null
     ```
     
@@ -37,9 +37,9 @@
   | NL | Dutch |
 
     ```javascript
-    var dateParser = require('date-parser');
-    dateParser.test("RRRR, EEEE", "Yesterday, Monday"); // true
+    var dateX = require('date-x');
+    dateX.test("RRRR, EEEE", "Yesterday, Monday"); // true
     
-    dateParser.loadLocale('hu');
-    dateParser.test("RRRR, EEEE", "Tegnap, Hétfő"); // true
+    dateX.loadLocale('hu');
+    dateX.test("RRRR, EEEE", "Tegnap, Hétfő"); // true
     ```
