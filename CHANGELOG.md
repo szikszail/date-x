@@ -42,3 +42,4 @@
     
     dateParser.loadLocale('hu');
     dateParser.test("RRRR, EEEE", "Tegnap, Hétfő"); // true
+    ```
