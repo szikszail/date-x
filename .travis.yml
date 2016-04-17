@@ -7,5 +7,3 @@ deploy:
   provider: npm
   email: "sziklaszlo@gmail.com"
   api_key: "a7c4d4a1-f13d-4771-bbdd-5ded3b5c5227"
-  on:
-    tags: true
