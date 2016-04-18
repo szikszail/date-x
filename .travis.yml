@@ -1,8 +1,8 @@
 language: node_js
 node_js:
 - '4.1'
-scripts:
-- npm test
+script:
+- npm run-script travis
 deploy:
   provider: npm
   email: "sziklaszlo@gmail.com"
