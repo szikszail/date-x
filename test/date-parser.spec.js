@@ -17,4 +17,20 @@ describe("date-parser", function () {
         });
     });
 
+    describe("match()", function () {
+        it("should match valid date by given format", function () {
+            var match = dateParser.match('yyyy.MM.dd. HH:mm:ss', '2016.01.02. 03:04:05');
+            expect(match[1]).to.equal('2016');
+            expect(match[2]).to.equal('01');
+            expect(match[3]).to.equal('02');
+            expect(match[4]).to.equal('03');
+            expect(match[5]).to.equal('04');
+            expect(match[6]).to.equal('05');
+        });
+
+        it("should not match if a date is not valid by given format", function () {
+            expect(dateParser.match('yyyy.MM.dd. HH:mm:ss', '2016.1.1. 01:01:01')).to.equal(null);
+        });
+    });
+
 });
