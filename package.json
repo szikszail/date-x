@@ -1,7 +1,7 @@
 {
   "name": "date-x",
   "version": "0.1.3",
-  "description": "Library to parse date strings to date object.",
+  "description": "Library to handle dates in a custom date format.",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha",
