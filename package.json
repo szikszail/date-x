@@ -1,6 +1,6 @@
 {
   "name": "date-x",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Library to handle dates in a custom date format.",
   "main": "lib/index.js",
   "scripts": {
