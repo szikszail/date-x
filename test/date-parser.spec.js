@@ -7,6 +7,17 @@ describe("date-parser", function () {
         dateParser = require('../lib/index');
     });
 
+    describe("loadLocale()", function () {
+        it("should throw an error if the desired locale is not exist", function () {
+            var notExistingLocale = 'THERE-IS-NO-LOCALE-LIKE-THIS';
+            function test() {
+                dateParser.loadLocale(notExistingLocale);
+            }
+
+            expect(test).to.throw(new RegExp(notExistingLocale, 'i'));
+        });
+    });
+
     describe("test()", function () {
         it("should recognize valid date by given format", function () {
             expect(dateParser.test('yyyy.MM.dd. HH:mm:ss', '2016.01.01. 01:01:01')).to.equal(true);
