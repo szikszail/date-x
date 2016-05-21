@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0
+
+- Rewrote the code with ES2015 features
+
 ## 0.1.3
 
 ### Contribution
