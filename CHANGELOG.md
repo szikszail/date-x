@@ -1,20 +1,20 @@
 # Changelog
 
-## master (unreleased)
+## v0.3.0
 
 - [#2](https://github.com/szikszail/date-x/issues/2) Make plugin for chai
 
-## 0.2.0
+## v0.2.0
 
 - Rewrote the code with ES2015 features
 
-## 0.1.3
+## v0.1.3
 
 ### Contribution
 
 - Added test coverage measurement (istanbul)
 
-## 0.1.2
+## v0.1.2
 
 ### Features
 
