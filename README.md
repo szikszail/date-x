@@ -9,7 +9,8 @@ It provides the ability to compare date string with custom date format expressio
 Testing dates with custom date format:
 
 ```javascript
-var dateX = require('date-x');
+'use strict';
+const dateX = require('date-x');
 dateX.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32"); // true
 dateX.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32"); // false
 ```
@@ -17,15 +18,16 @@ dateX.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32"); // false
 Matching date with custom date format:
 
 ```javascript
-var dateX = require('date-x');
-var m1 = dateX.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32");
+'use strict';
+const dateX = require('date-x');
+const m1 = dateX.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32");
 // m1: [
 //   '03/12/2016 11:11:32',
 //   '03', '12', '2016',
 //   '11', '11', '32',
 //   index: 0, ...
 // ]
-var m2 = datex.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32");
+const m2 = datex.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32");
 // m2: null
 ```
     
@@ -38,12 +40,24 @@ Support for localized matching.
 | NL | Dutch |
 
 ```javascript
-var dateX = require('date-x');
+'use strict';
+const dateX = require('date-x');
 dateX.test("RRRR, EEEE", "Yesterday, Monday"); // true
 
 dateX.loadLocale('hu');
 dateX.test("RRRR, EEEE", "Tegnap, Hétfő"); // true
 ```
+
+## Chai plugin
+
+```javascript
+'use strict';
+const chai = require('chai');
+chai.use(require('date-x/chai'));
+
+chai.expect("03/12/2016 11:11:32").to.be.inDateFormat("dd/MM/yyyy hh:mm:ss");
+```
+
 
 ## Supported date formats
 

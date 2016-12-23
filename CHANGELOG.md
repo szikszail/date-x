@@ -1,5 +1,9 @@
 # Changelog
 
+## master (unreleased)
+
+- [#2](https://github.com/szikszail/date-x/issues/2) Make plugin for chai
+
 ## 0.2.0
 
 - Rewrote the code with ES2015 features
