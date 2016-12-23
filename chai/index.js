@@ -5,11 +5,17 @@ const dateX = require('../lib/index.js');
 module.exports = (chai, utils) => {
     const METHODS = {
         inDateFormat: function (format) {
-            if (format === undefined) {
-                throw new Error('The expected value must be set!');
+            if (!format) {
+                throw new Error('The expected value must be set to a date format string!');
             }
-            var obj = this.__flags.object;
-            
+            var dateString = this.__flags.object;
+            this.assert(
+                dateX.test(format, dateString),
+                `expected "${dateString}" to be formatted as "${format}"`,
+                `expected "${dateString}" not to be formatted as "${format}"`,
+                dateString,
+                format
+            );
         }
     };
 
