@@ -11,7 +11,7 @@ describe("date-x chai plugin", () => {
     });
 
     it("should have method to test date format: inDateFormat", () => {
-        expect(expect().inDateFormat).to.be.defined;
+        expect(expect().inDateFormat).not.to.be.undefined;
     });
 
     it("should throw error if called without any format string", () => {

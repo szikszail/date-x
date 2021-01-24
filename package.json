@@ -1,6 +1,6 @@
 {
   "name": "date-x",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Library to handle dates in a custom date format.",
   "main": "lib/index.js",
   "scripts": {
@@ -25,14 +25,12 @@
     "url": "https://github.com/szikszail/date-x/issues"
   },
   "engines": {
-    "node": ">=4.4.2",
-    "npm": "~2.14.7"
+    "node": ">=10"
   },
   "homepage": "https://github.com/szikszail/date-x#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "coveralls": "^2.11.9",
-    "istanbul": "^0.4.3",
-    "mocha": "^2.4.5"
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^8.2.1"
   }
 }
