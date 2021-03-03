@@ -1,8 +1,9 @@
 {
   "name": "date-x",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Library to handle dates in a custom date format.",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover --include-all-sources ./node_modules/mocha/bin/_mocha -v --root ./lib --report lcovonly",
@@ -29,8 +30,8 @@
   },
   "homepage": "https://github.com/szikszail/date-x#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
+    "chai": "^4.3.3",
     "istanbul": "^0.4.5",
-    "mocha": "^8.2.1"
+    "mocha": "^8.3.0"
   }
 }

@@ -397,6 +397,34 @@ describe("date-parser, formats", function () {
                 expect(regExp.test("+00:40")).to.be.false;
             });
         });
+
+        describe("literals", function () {
+            it("(!) should handle character as literal", () => {
+                var regExp = getRegExp("!a");
+                expect(regExp.test("a")).to.be.true;
+                expect(regExp.test("AM")).to.be.false;
+            });
+
+            it("(!!) should handle ! as a character literal", () => {
+                var regExp = getRegExp("!!");
+                expect(regExp.test("!")).to.be.true;
+                expect(regExp.test("!a")).to.be.false;
+            });
+        });
+
+        describe("complex", function () {
+            it("should handle complex expression", () => {
+                var regExp = getRegExp("MMMM d, yyyy H a");
+                expect(regExp.test("March 3, 2020 11 AM")).to.be.true;
+                expect(regExp.test("Mar 03, 20 1a")).to.be.false;
+            });
+
+            it("should handle complex expression with literals", () => {
+                var regExp = getRegExp("MMMM d, yyyy !a!t H a CEST");
+                expect(regExp.test("March 3, 2020 at 11 AM CEST")).to.be.true;
+                expect(regExp.test("March 3, 2020 AMt 11 AM CEST")).to.be.false;
+            });
+        });
     });
     
     describe("_groupRegExpString()", function () {

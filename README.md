@@ -1,6 +1,9 @@
 # date-x
 
-[![Build Status](https://travis-ci.org/szikszail/date-x.svg?branch=master)](https://travis-ci.org/szikszail/date-x) [![dependency Status](https://david-dm.org/szikszail/date-x.svg)](https://david-dm.org/szikszail/date-x) [![devDependency Status](https://david-dm.org/szikszail/date-x/dev-status.svg)](https://david-dm.org/szikszail/date-x#info=devDependencies) [![Coverage Status](https://coveralls.io/repos/github/szikszail/date-x/badge.svg?branch=master)](https://coveralls.io/github/szikszail/date-x?branch=master)
+![Downloads](https://img.shields.io/npm/dw/with-aws-creds?style=flat-square)
+![Version@npm](https://img.shields.io/npm/v/with-aws-creds?label=version%40npm&style=flat-square)
+![Version@git](https://img.shields.io/github/package-json/v/szikszail/with-aws-creds/master?label=version%40git&style=flat-square)
+![CI](https://img.shields.io/github/workflow/status/szikszail/with-aws-creds/CI/master?label=ci&style=flat-square)
 
 It provides the ability to compare date string with custom date format expression.
 

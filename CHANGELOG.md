@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1.0
+
+- Added general assertions
+- Added `d.ts` files
+- Added option to set string literals in date format
+
+## v1.0.0
+
+- Updated dependencies
+
 ## v0.3.0
 
 - [#2](https://github.com/szikszail/date-x/issues/2) Make plugin for chai
