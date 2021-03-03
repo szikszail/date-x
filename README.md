@@ -123,4 +123,10 @@ The module will replace the tokens in the string in given order of the bellow to
 
 It also supports predefined localizable formats, like: `short` , `medium` , `fullDate` , `mediumTime` , etc. in all supported locales.
 
-**Important** using the above-listed tokens as normal characters can be done with using the `!` character in fron of a character. For example to set an `a` in the format, use it as `!a`, so that it won't match for AM/PM. If you would like to set a `!` character in the format, use the `!!`. In case of characters what are not listed in the format tokens, no need to use the `!`.
+## Important
+
+Using the above-listed tokens as normal characters can be done with using the `!` character in fron of a character. For example to set an `a` in the format, use it as `!a`, so that it won't match for AM/PM.
+
+If you would like to set a `!` character in the format, use the `!!`. 
+
+In case of characters what are not listed in the format tokens, no need to use the `!`.
