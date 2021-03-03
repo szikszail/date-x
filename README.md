@@ -1,9 +1,9 @@
 # date-x
 
-![Downloads](https://img.shields.io/npm/dw/with-aws-creds?style=flat-square)
-![Version@npm](https://img.shields.io/npm/v/with-aws-creds?label=version%40npm&style=flat-square)
-![Version@git](https://img.shields.io/github/package-json/v/szikszail/with-aws-creds/master?label=version%40git&style=flat-square)
-![CI](https://img.shields.io/github/workflow/status/szikszail/with-aws-creds/CI/master?label=ci&style=flat-square)
+![Downloads](https://img.shields.io/npm/dw/date-x?style=flat-square)
+![Version@npm](https://img.shields.io/npm/v/date-x?label=version%40npm&style=flat-square)
+![Version@git](https://img.shields.io/github/package-json/v/szikszail/date-x/master?label=version%40git&style=flat-square)
+![CI](https://img.shields.io/github/workflow/status/szikszail/date-x/Node.js%20CI/master?label=ci&style=flat-square)
 
 It provides the ability to compare date string with custom date format expression.
 
@@ -11,16 +11,18 @@ It provides the ability to compare date string with custom date format expressio
 
 Testing dates with custom date format:
 
-```javascript
+``` javascript
 'use strict';
 const dateX = require('date-x');
 dateX.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32"); // true
 dateX.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32"); // false
 ```
-    
+
+Where `test` is: `test(format: string, dateString: string, ignoreCase?: boolean): boolean`
+
 Matching date with custom date format:
 
-```javascript
+``` javascript
 'use strict';
 const dateX = require('date-x');
 const m1 = dateX.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32");
@@ -33,7 +35,10 @@ const m1 = dateX.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32");
 const m2 = datex.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32");
 // m2: null
 ```
+
+Where `match` is: `match(format: string, dateString: string, ignoreCase?: boolean): RegExpMatchArray`
     
+
 Support for localized matching.
 
 | Code | Name |
@@ -42,7 +47,7 @@ Support for localized matching.
 | HU | Hungarian |
 | NL | Dutch |
 
-```javascript
+``` javascript
 'use strict';
 const dateX = require('date-x');
 dateX.test("RRRR, EEEE", "Yesterday, Monday"); // true
@@ -51,9 +56,30 @@ dateX.loadLocale('hu');
 dateX.test("RRRR, EEEE", "Tegnap, Hétfő"); // true
 ```
 
+Where `loadLocale` is: `loadLocale(local: "en" | "hu" | "nl"): void`
+
+## Assertions
+
+``` javascript
+const {
+    assertDateFormat,
+    asssertNotDateFormat
+} = require("date-x/assert");
+
+assertDateFormat("03/12/2016 11:11:32", "dd/MM/yyyy hh:mm:ss");
+assertNotDateFormat("this is not a date", "yyyy-MM-dd");
+```
+
+Where both assertion has the following parameters:
+1. `dateString: string` the actual value to check
+1. `format: string` the date format to match
+1. `options?: DateFormatAssertOptions` the modifiers/options to match:
+   - `locale?: "hu" | "en" | "nl"` the locale to use
+   - `ignoreCase?: boolean` whether character casing should be ignored 
+
 ## Chai plugin
 
-```javascript
+``` javascript
 'use strict';
 const chai = require('chai');
 chai.use(require('date-x/chai'));
@@ -61,8 +87,7 @@ chai.use(require('date-x/chai'));
 chai.expect("03/12/2016 11:11:32").to.be.inDateFormat("dd/MM/yyyy hh:mm:ss");
 ```
 
-
-## Supported date formats
+## Date format string
 
 It based on [AngularJS date filter](https://docs.angularjs.org/api/ng/filter/date) format tokens.
 The module will replace the tokens in the string in given order of the bellow tokens.
@@ -93,7 +118,9 @@ The module will replace the tokens in the string in given order of the bellow to
 | `sss` | Millisecond in second, padded | 000-999 |
 | `ss` | Second in minute, padded | 00-59 |
 | `s` | Second in minute | 0-59 |
-| `a` | AM/PM marke | AM, PM |
+| `a` | AM/PM mark | AM, PM |
 | `Z` | 4 digit (+sign) representation of the timezone offet | -1200 - +1200 |
 
-It also supports predefined localizable formats, like: `short`, `medium`, `fullDate`, `mediumTime`, etc. in all supported locales.
+It also supports predefined localizable formats, like: `short` , `medium` , `fullDate` , `mediumTime` , etc. in all supported locales.
+
+**Important** using the above-listed tokens as normal characters can be done with using the `!` character in fron of a character. For example to set an `a` in the format, use it as `!a`, so that it won't match for AM/PM. If you would like to set a `!` character in the format, use the `!!`. In case of characters what are not listed in the format tokens, no need to use the `!`.
