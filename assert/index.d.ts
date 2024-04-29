@@ -1,9 +1,9 @@
 import { AvailableLocale } from "..";
 
-export class DateFormatAssertionError extends Error { };
-export interface DateFormatAssertOptions {
+export class DateFormatAssertionError extends Error { }
+export type DateFormatAssertOptions = {
     locale?: AvailableLocale;
     ignoreCase?: boolean;
 }
-export function assertDateFormat(dateString: string, format: string, options?: DateFormatAssertOptions): void;
-export function assertNotDateFormat(dateString: string, format: string, options?: DateFormatAssertOptions): void;
+export declare function assertDateFormat(dateString: string, format: string, options?: DateFormatAssertOptions): void;
+export declare function assertNotDateFormat(dateString: string, format: string, options?: DateFormatAssertOptions): void;
