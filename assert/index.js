@@ -21,7 +21,6 @@ const error = (shouldMatch, dateString, format, locale, ignoreCase) => {
 }
 
 const assert = (shouldMatch, dateString, format, { locale = DEFAULT_LOCALE, ignoreCase = false } = {}) => {
-    console.log({ shouldMatch, dateString, format, locale, ignoreCase });
     if (!dateString) {
         throw new TypeError("Date string is not set!");
     }

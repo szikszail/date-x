@@ -8,7 +8,7 @@ module.exports = (chai, utils) => {
             if (!format) {
                 throw new Error('The expected value must be set to a date format string!');
             }
-            var dateString = this.__flags.object;
+            const dateString = this.__flags.object;
             this.assert(
                 dateX.test(format, dateString),
                 `expected "${dateString}" to be formatted as "${format}"`,
@@ -21,6 +21,6 @@ module.exports = (chai, utils) => {
 
     Object.keys(METHODS).forEach(methodName => {
         const method = METHODS[methodName];
-        chai.Assertion.addMethod(methodName, method); 
+        chai.Assertion.addMethod(methodName, method);
     });
 };
