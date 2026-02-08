@@ -5,5 +5,7 @@ on:
 jobs:
   call_npm_release:
     uses: szikszail/workflows/.github/workflows/npm-release.yml@v1
+    permissions:
+      id-token: write
     secrets:
       npm_token: ${{ secrets.npm_token }}
