@@ -1,6 +1,6 @@
 # date-x
 
-![Downloads](https://img.shields.io/npm/dw/date-x?style=flat-square) ![Version@npm](https://img.shields.io/npm/v/date-x?label=version%40npm&style=flat-square) ![Version@git](https://img.shields.io/github/package-json/v/szikszail/date-x/main?label=version%40git&style=flat-square) ![CI](https://img.shields.io/github/actions/workflow/status/szikszail/date-x/ci.yml?branch=main&label=ci&style=flat-square) ![Docs](https://img.shields.io/github/actions/workflow/status/szikszail/date-x/docs.yml?branch=main&label=docs&style=flat-square)
+![Downloads](https://img.shields.io/npm/dw/date-x?style=flat-square) ![Version@npm](https://img.shields.io/npm/v/date-x?label=version%40npm&style=flat-square) ![Version@git](https://img.shields.io/github/package-json/v/szikszail/date-x/master?label=version%40git&style=flat-square) ![CI](https://img.shields.io/github/actions/workflow/status/szikszail/date-x/ci.yml?branch=master&label=ci&style=flat-square) ![Docs](https://img.shields.io/github/actions/workflow/status/szikszail/date-x/docs.yml?branch=master&label=docs&style=flat-square)
 
 It provides the ability to compare date string with custom date format expression.
 
