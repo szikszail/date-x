@@ -1,9 +1,6 @@
 # date-x
 
-![Downloads](https://img.shields.io/npm/dw/date-x?style=flat-square)
-![Version@npm](https://img.shields.io/npm/v/date-x?label=version%40npm&style=flat-square)
-![Version@git](https://img.shields.io/github/package-json/v/szikszail/date-x/master?label=version%40git&style=flat-square)
-![CI](https://img.shields.io/github/actions/workflow/status/szikszail/date-x/node.js.yml?branch=master&label=ci&style=flat-square)
+![Downloads](https://img.shields.io/npm/dw/date-x?style=flat-square) ![Version@npm](https://img.shields.io/npm/v/date-x?label=version%40npm&style=flat-square) ![Version@git](https://img.shields.io/github/package-json/v/szikszail/date-x/main?label=version%40git&style=flat-square) ![CI](https://img.shields.io/github/actions/workflow/status/szikszail/date-x/ci.yml?branch=main&label=ci&style=flat-square) ![Docs](https://img.shields.io/github/actions/workflow/status/szikszail/date-x/docs.yml?branch=main&label=docs&style=flat-square)
 
 It provides the ability to compare date string with custom date format expression.
 
@@ -11,8 +8,9 @@ It provides the ability to compare date string with custom date format expressio
 
 Testing dates with custom date format:
 
-```javascript
-const dateX = require('date-x');
+```js
+import dateX from "date-x";
+
 dateX.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32"); // true
 dateX.test("dd/MM/yyyy hh:mm:ss", "03/12/2016 20:11:32"); // false
 ```
@@ -21,8 +19,9 @@ Where `test` is: `test(format: string, dateString: string, ignoreCase?: boolean)
 
 Matching date with custom date format:
 
-```javascript
-const dateX = require('date-x');
+```js
+import dateX from "date-x";
+
 const m1 = dateX.match("dd/MM/yyyy hh:mm:ss", "03/12/2016 11:11:32");
 // m1: [
 //   '03/12/2016 11:11:32',
@@ -44,8 +43,9 @@ Support for localized matching.
 | HU   | Hungarian         |
 | NL   | Dutch             |
 
-```javascript
-const dateX = require('date-x');
+```js
+import dateX from "date-x";
+
 dateX.test("RRRR, EEEE", "Yesterday, Monday"); // true
 
 dateX.loadLocale('hu');
@@ -56,11 +56,11 @@ Where `loadLocale` is: `loadLocale(local: "en" | "hu" | "nl"): void`
 
 ## Assertions
 
-```javascript
-const {
+```js
+import {
     assertDateFormat,
     asssertNotDateFormat
-} = require("date-x/assert");
+} from "date-x/assert";
 
 assertDateFormat("03/12/2016 11:11:32", "dd/MM/yyyy hh:mm:ss");
 assertNotDateFormat("this is not a date", "yyyy-MM-dd");
@@ -76,8 +76,9 @@ Where both assertion has the following parameters:
 
 ## Chai plugin
 
-```javascript
-const chai = require('chai');
+```js
+import dateX from "date-x";
+
 chai.use(require('date-x/chai'));
 
 chai.expect("03/12/2016 11:11:32").to.be.inDateFormat("dd/MM/yyyy hh:mm:ss");

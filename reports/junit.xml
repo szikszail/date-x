@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="148" failures="0" errors="0" time="0.728">
+  <testsuite name="assert" errors="0" failures="0" skipped="0" timestamp="2026-02-08T15:41:50" time="0.19" tests="12">
+    <testcase classname="assert assertDateFormat should fail if no date string is set" name="assert assertDateFormat should fail if no date string is set" time="0.004">
+    </testcase>
+    <testcase classname="assert assertDateFormat should fail if no date format is set" name="assert assertDateFormat should fail if no date format is set" time="0">
+    </testcase>
+    <testcase classname="assert assertDateFormat should pass if the date is properly formatted" name="assert assertDateFormat should pass if the date is properly formatted" time="0.001">
+    </testcase>
+    <testcase classname="assert assertDateFormat should fail if the date is not properly formatted" name="assert assertDateFormat should fail if the date is not properly formatted" time="0">
+    </testcase>
+    <testcase classname="assert assertDateFormat should pass if the date is properly formatted with given locale" name="assert assertDateFormat should pass if the date is properly formatted with given locale" time="0.001">
+    </testcase>
+    <testcase classname="assert assertDateFormat should pass if the date is properly formatted with ignoreing case" name="assert assertDateFormat should pass if the date is properly formatted with ignoreing case" time="0">
+    </testcase>
+    <testcase classname="assert assertNotDateFormat should fail if no date string is set" name="assert assertNotDateFormat should fail if no date string is set" time="0">
+    </testcase>
+    <testcase classname="assert assertNotDateFormat should fail if no date format is set" name="assert assertNotDateFormat should fail if no date format is set" time="0.001">
+    </testcase>
+    <testcase classname="assert assertNotDateFormat should pass if the date is not properly formatted" name="assert assertNotDateFormat should pass if the date is not properly formatted" time="0">
+    </testcase>
+    <testcase classname="assert assertNotDateFormat should fail if the date is properly formatted" name="assert assertNotDateFormat should fail if the date is properly formatted" time="0.001">
+    </testcase>
+    <testcase classname="assert assertNotDateFormat should fail if the date is properly formatted with given locale" name="assert assertNotDateFormat should fail if the date is properly formatted with given locale" time="0">
+    </testcase>
+    <testcase classname="assert assertNotDateFormat should fail if the date is properly formatted with ignoreing case" name="assert assertNotDateFormat should fail if the date is properly formatted with ignoreing case" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="date-x chai plugin" errors="0" failures="0" skipped="0" timestamp="2026-02-08T15:41:50" time="0.08" tests="6">
+    <testcase classname="date-x chai plugin should have method to test date format: inDateFormat" name="date-x chai plugin should have method to test date format: inDateFormat" time="0.001">
+    </testcase>
+    <testcase classname="date-x chai plugin should throw error if called without any format string" name="date-x chai plugin should throw error if called without any format string" time="0.021">
+    </testcase>
+    <testcase classname="date-x chai plugin should recognize datestring with given format [+]" name="date-x chai plugin should recognize datestring with given format [+]" time="0.001">
+    </testcase>
+    <testcase classname="date-x chai plugin should recognize datestring with given format [-]" name="date-x chai plugin should recognize datestring with given format [-]" time="0">
+    </testcase>
+    <testcase classname="date-x chai plugin should recognize datestring with not the given format [+]" name="date-x chai plugin should recognize datestring with not the given format [+]" time="0">
+    </testcase>
+    <testcase classname="date-x chai plugin should recognize datestring with not the given format [-]" name="date-x chai plugin should recognize datestring with not the given format [-]" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="date-parser, formats" errors="0" failures="0" skipped="0" timestamp="2026-02-08T15:41:50" time="0.031" tests="62">
+    <testcase classname="date-parser, formats localizeRegExps en (shortTime) should match to short time format, e.g.: 3:45 am" name="date-parser, formats localizeRegExps en (shortTime) should match to short time format, e.g.: 3:45 am" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps en (mediumTime) should match to medium time format, e.g.: 3:45:23 am" name="date-parser, formats localizeRegExps en (mediumTime) should match to medium time format, e.g.: 3:45:23 am" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps en (shortDate) should match to short date format, e.g.: 2/3/16" name="date-parser, formats localizeRegExps en (shortDate) should match to short date format, e.g.: 2/3/16" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps en (mediumDate) should match to medium date format, e.g.: Jan 2, 2016" name="date-parser, formats localizeRegExps en (mediumDate) should match to medium date format, e.g.: Jan 2, 2016" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps en (longDate) should match to long date format, e.g.: January 2, 2016" name="date-parser, formats localizeRegExps en (longDate) should match to long date format, e.g.: January 2, 2016" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps en (fullDate) should match to full date format, e.g.: Monday, January 2, 2016" name="date-parser, formats localizeRegExps en (fullDate) should match to full date format, e.g.: Monday, January 2, 2016" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps en (short) should match to short date time format, e.g.: 2/3/16 3:45 am" name="date-parser, formats localizeRegExps en (short) should match to short date time format, e.g.: 2/3/16 3:45 am" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps en (medium) should match to medium date time format, e.g.: Jan 2, 2016 03:45:23 am" name="date-parser, formats localizeRegExps en (medium) should match to medium date time format, e.g.: Jan 2, 2016 03:45:23 am" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps hu (shortTime) should match to short time format, e.g.: 03:45" name="date-parser, formats localizeRegExps hu (shortTime) should match to short time format, e.g.: 03:45" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps hu (mediumTime) should match to medium time format, e.g.: 03:45:23" name="date-parser, formats localizeRegExps hu (mediumTime) should match to medium time format, e.g.: 03:45:23" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps hu (shortDate) should match to short date format, e.g.: 2016. 2. 3." name="date-parser, formats localizeRegExps hu (shortDate) should match to short date format, e.g.: 2016. 2. 3." time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps hu (mediumDate) should match to medium date format, e.g.: 2016. Jan. 2." name="date-parser, formats localizeRegExps hu (mediumDate) should match to medium date format, e.g.: 2016. Jan. 2." time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps hu (longDate) should match to long date format, e.g.: 2016. Január 2." name="date-parser, formats localizeRegExps hu (longDate) should match to long date format, e.g.: 2016. Január 2." time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps hu (fullDate) should match to full date format, e.g.: 2016. Január 2., Hétfő" name="date-parser, formats localizeRegExps hu (fullDate) should match to full date format, e.g.: 2016. Január 2., Hétfő" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps hu (short) should match to short date time format, e.g.: 2016. 2. 3. 03:45" name="date-parser, formats localizeRegExps hu (short) should match to short date time format, e.g.: 2016. 2. 3. 03:45" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats localizeRegExps hu (medium) should match to medium date time format, e.g.: 2016. Jan. 3. 03:45:23" name="date-parser, formats localizeRegExps hu (medium) should match to medium date time format, e.g.: 2016. Jan. 3. 03:45:23" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps months (LLLL) should match to full month names" name="date-parser, formats tokenRegExps months (LLLL) should match to full month names" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps months (MMMM) should match to full month names" name="date-parser, formats tokenRegExps months (MMMM) should match to full month names" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps months (MMM) should match to short month names" name="date-parser, formats tokenRegExps months (MMM) should match to short month names" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps months (MM) should match to padded month numbers" name="date-parser, formats tokenRegExps months (MM) should match to padded month numbers" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps months (M) should match to normal month numbers" name="date-parser, formats tokenRegExps months (M) should match to normal month numbers" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps quarter (Q) should match the quarter" name="date-parser, formats tokenRegExps quarter (Q) should match the quarter" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps years (yyyy) should match to full years" name="date-parser, formats tokenRegExps years (yyyy) should match to full years" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps years (yy) should match to two digit years" name="date-parser, formats tokenRegExps years (yy) should match to two digit years" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps years (y) should match to one digit years" name="date-parser, formats tokenRegExps years (y) should match to one digit years" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps years (GGGG) should match to full years" name="date-parser, formats tokenRegExps years (GGGG) should match to full years" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps years (gggg) should match to full years" name="date-parser, formats tokenRegExps years (gggg) should match to full years" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps days (EEEE) should match to full day names" name="date-parser, formats tokenRegExps days (EEEE) should match to full day names" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps days (EEE) should match to short day names" name="date-parser, formats tokenRegExps days (EEE) should match to short day names" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps days (RRRR) should match to relative day names" name="date-parser, formats tokenRegExps days (RRRR) should match to relative day names" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps days (Do) should match to number of day of month with ordinal" name="date-parser, formats tokenRegExps days (Do) should match to number of day of month with ordinal" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps days (dd) should match to padded day of the month" name="date-parser, formats tokenRegExps days (dd) should match to padded day of the month" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps days (d) should match to any day of the month" name="date-parser, formats tokenRegExps days (d) should match to any day of the month" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps week (ww) should match to padded number of week of year" name="date-parser, formats tokenRegExps week (ww) should match to padded number of week of year" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps week (wo) should match to number of week of year with ordinal" name="date-parser, formats tokenRegExps week (wo) should match to number of week of year with ordinal" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps week (w) should match to the number of week of year" name="date-parser, formats tokenRegExps week (w) should match to the number of week of year" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps hours (HH) should match to padded 24h format" name="date-parser, formats tokenRegExps hours (HH) should match to padded 24h format" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps hours (H) should match to 24h format" name="date-parser, formats tokenRegExps hours (H) should match to 24h format" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps hours (hh) should match to padded 12h format" name="date-parser, formats tokenRegExps hours (hh) should match to padded 12h format" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps hours (h) should match to 12h format" name="date-parser, formats tokenRegExps hours (h) should match to 12h format" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps hours (kk) should match to padded 24h format, starting 1" name="date-parser, formats tokenRegExps hours (kk) should match to padded 24h format, starting 1" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps hours (k) should match to 24h format, starting 1" name="date-parser, formats tokenRegExps hours (k) should match to 24h format, starting 1" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps minutes (mm) should match to padded minutes in hours" name="date-parser, formats tokenRegExps minutes (mm) should match to padded minutes in hours" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps minutes (m) should match to minutes in hours" name="date-parser, formats tokenRegExps minutes (m) should match to minutes in hours" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps seconds, milliseconds (sss) should match to milliseconds" name="date-parser, formats tokenRegExps seconds, milliseconds (sss) should match to milliseconds" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps seconds, milliseconds (ss) should match to padded seconds in hours" name="date-parser, formats tokenRegExps seconds, milliseconds (ss) should match to padded seconds in hours" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps seconds, milliseconds (s) should match to seconds in hours" name="date-parser, formats tokenRegExps seconds, milliseconds (s) should match to seconds in hours" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps other (a) should match to am/pm" name="date-parser, formats tokenRegExps other (a) should match to am/pm" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps other (Z) should match to any timezone offset" name="date-parser, formats tokenRegExps other (Z) should match to any timezone offset" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps other (zzz) should match to any unabbreviated timezone" name="date-parser, formats tokenRegExps other (zzz) should match to any unabbreviated timezone" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps other (z) should match to any abbreviated timezone" name="date-parser, formats tokenRegExps other (z) should match to any abbreviated timezone" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps other (X) should match unix timestamp in seconds" name="date-parser, formats tokenRegExps other (X) should match unix timestamp in seconds" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps other (x) should match unix timestamp in milliseconds" name="date-parser, formats tokenRegExps other (x) should match unix timestamp in milliseconds" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps literals (!) should handle character as literal" name="date-parser, formats tokenRegExps literals (!) should handle character as literal" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps literals (!!) should handle ! as a character literal" name="date-parser, formats tokenRegExps literals (!!) should handle ! as a character literal" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps complex should handle complex expression" name="date-parser, formats tokenRegExps complex should handle complex expression" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats tokenRegExps complex should handle complex expression with literals" name="date-parser, formats tokenRegExps complex should handle complex expression with literals" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats _groupRegExpString() should group with not matching group" name="date-parser, formats _groupRegExpString() should group with not matching group" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats _groupRegExpString() should group with matching group" name="date-parser, formats _groupRegExpString() should group with matching group" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats _groupRegExpString() should not group if prohibited" name="date-parser, formats _groupRegExpString() should not group if prohibited" time="0">
+    </testcase>
+    <testcase classname="date-parser, formats buildRegExpStringByFormat() should replace all possible tokens" name="date-parser, formats buildRegExpStringByFormat() should replace all possible tokens" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, formats buildLocaleRegExpStringByFormat() should replace all possible locale tokens" name="date-parser, formats buildLocaleRegExpStringByFormat() should replace all possible locale tokens" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="date-parser, locale EN" errors="0" failures="0" skipped="0" timestamp="2026-02-08T15:41:50" time="0.018" tests="34">
+    <testcase classname="date-parser, locale EN localizeRegExps (shortTime) should match to short time format, e.g.: 3:45 am" name="date-parser, locale EN localizeRegExps (shortTime) should match to short time format, e.g.: 3:45 am" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN localizeRegExps (mediumTime) should match to medium time format, e.g.: 3:45:23 am" name="date-parser, locale EN localizeRegExps (mediumTime) should match to medium time format, e.g.: 3:45:23 am" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN localizeRegExps (shortDate) should match to short date format, e.g.: 2/3/16" name="date-parser, locale EN localizeRegExps (shortDate) should match to short date format, e.g.: 2/3/16" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN localizeRegExps (mediumDate) should match to medium date format, e.g.: Jan 2, 2016" name="date-parser, locale EN localizeRegExps (mediumDate) should match to medium date format, e.g.: Jan 2, 2016" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN localizeRegExps (longDate) should match to long date format, e.g.: January 2, 2016" name="date-parser, locale EN localizeRegExps (longDate) should match to long date format, e.g.: January 2, 2016" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN localizeRegExps (fullDate) should match to full date format, e.g.: Monday, January 2, 2016" name="date-parser, locale EN localizeRegExps (fullDate) should match to full date format, e.g.: Monday, January 2, 2016" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN localizeRegExps (short) should match to short date time format, e.g.: 2/3/16 3:45 am" name="date-parser, locale EN localizeRegExps (short) should match to short date time format, e.g.: 2/3/16 3:45 am" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale EN localizeRegExps (medium) should match to medium date time format, e.g.: Jan 2, 2016 03:45:23 am" name="date-parser, locale EN localizeRegExps (medium) should match to medium date time format, e.g.: Jan 2, 2016 03:45:23 am" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps months (LLLL) should match to full month names" name="date-parser, locale EN tokenRegExps months (LLLL) should match to full month names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps months (MMMM) should match to full month names" name="date-parser, locale EN tokenRegExps months (MMMM) should match to full month names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps months (MMM) should match to short month names" name="date-parser, locale EN tokenRegExps months (MMM) should match to short month names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps months (MM) should match to padded month numbers" name="date-parser, locale EN tokenRegExps months (MM) should match to padded month numbers" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps months (M) should match to normal month numbers" name="date-parser, locale EN tokenRegExps months (M) should match to normal month numbers" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps years (yyyy) should match to full years" name="date-parser, locale EN tokenRegExps years (yyyy) should match to full years" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps years (yy) should match to two digit years" name="date-parser, locale EN tokenRegExps years (yy) should match to two digit years" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps years (y) should match to one digit years" name="date-parser, locale EN tokenRegExps years (y) should match to one digit years" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps days (EEEE) should match to full day names" name="date-parser, locale EN tokenRegExps days (EEEE) should match to full day names" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps days (EEE) should match to short day names" name="date-parser, locale EN tokenRegExps days (EEE) should match to short day names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps days (RRRR) should match to relative day names" name="date-parser, locale EN tokenRegExps days (RRRR) should match to relative day names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps days (dd) should match to padded day of the month" name="date-parser, locale EN tokenRegExps days (dd) should match to padded day of the month" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps days (d) should match to any day of the month" name="date-parser, locale EN tokenRegExps days (d) should match to any day of the month" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps week (ww) should match to padded number of week of year" name="date-parser, locale EN tokenRegExps week (ww) should match to padded number of week of year" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps week (w) should match to the number of week of year" name="date-parser, locale EN tokenRegExps week (w) should match to the number of week of year" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps hours (HH) should match to padded 24h format" name="date-parser, locale EN tokenRegExps hours (HH) should match to padded 24h format" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps hours (H) should match to 24h format" name="date-parser, locale EN tokenRegExps hours (H) should match to 24h format" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps hours (hh) should match to padded 12h format" name="date-parser, locale EN tokenRegExps hours (hh) should match to padded 12h format" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps hours (h) should match to 12h format" name="date-parser, locale EN tokenRegExps hours (h) should match to 12h format" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps minutes (mm) should match to padded minutes in hours" name="date-parser, locale EN tokenRegExps minutes (mm) should match to padded minutes in hours" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps minutes (m) should match to minutes in hours" name="date-parser, locale EN tokenRegExps minutes (m) should match to minutes in hours" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps seconds, milliseconds (sss) should match to milliseconds" name="date-parser, locale EN tokenRegExps seconds, milliseconds (sss) should match to milliseconds" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps seconds, milliseconds (ss) should match to padded seconds in hours" name="date-parser, locale EN tokenRegExps seconds, milliseconds (ss) should match to padded seconds in hours" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps seconds, milliseconds (s) should match to seconds in hours" name="date-parser, locale EN tokenRegExps seconds, milliseconds (s) should match to seconds in hours" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps other (a) should match to am/pm" name="date-parser, locale EN tokenRegExps other (a) should match to am/pm" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale EN tokenRegExps other (Z) should match to any timezone offset" name="date-parser, locale EN tokenRegExps other (Z) should match to any timezone offset" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="date-parser, locale NL" errors="0" failures="0" skipped="0" timestamp="2026-02-08T15:41:50" time="0.014" tests="14">
+    <testcase classname="date-parser, locale NL localizeRegExps (shortTime) should match to short time format, e.g.: 03:45" name="date-parser, locale NL localizeRegExps (shortTime) should match to short time format, e.g.: 03:45" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale NL localizeRegExps (mediumTime) should match to medium time format, e.g.: 03:45:23" name="date-parser, locale NL localizeRegExps (mediumTime) should match to medium time format, e.g.: 03:45:23" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale NL localizeRegExps (shortDate) should match to short date format, e.g.: 03-02-2016" name="date-parser, locale NL localizeRegExps (shortDate) should match to short date format, e.g.: 03-02-2016" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale NL localizeRegExps (mediumDate) should match to medium date format, e.g.: 02 Jan 2016" name="date-parser, locale NL localizeRegExps (mediumDate) should match to medium date format, e.g.: 02 Jan 2016" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale NL localizeRegExps (longDate) should match to long date format, e.g.: 02 Januari 2016" name="date-parser, locale NL localizeRegExps (longDate) should match to long date format, e.g.: 02 Januari 2016" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale NL localizeRegExps (fullDate) should match to full date format, e.g.: Maandag 02 Januari 2016" name="date-parser, locale NL localizeRegExps (fullDate) should match to full date format, e.g.: Maandag 02 Januari 2016" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale NL localizeRegExps (short) should match to short date time format, e.g.: 02-03-2016 03:45" name="date-parser, locale NL localizeRegExps (short) should match to short date time format, e.g.: 02-03-2016 03:45" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale NL localizeRegExps (medium) should match to medium date time format, e.g.: 02 Jan 2016 03:45:52" name="date-parser, locale NL localizeRegExps (medium) should match to medium date time format, e.g.: 02 Jan 2016 03:45:52" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale NL tokenRegExps months (LLLL) should match to full month names" name="date-parser, locale NL tokenRegExps months (LLLL) should match to full month names" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale NL tokenRegExps months (MMMM) should match to full month names" name="date-parser, locale NL tokenRegExps months (MMMM) should match to full month names" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale NL tokenRegExps months (MMM) should match to short month names" name="date-parser, locale NL tokenRegExps months (MMM) should match to short month names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale NL tokenRegExps days (EEEE) should match to full day names" name="date-parser, locale NL tokenRegExps days (EEEE) should match to full day names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale NL tokenRegExps days (EEE) should match to short day names" name="date-parser, locale NL tokenRegExps days (EEE) should match to short day names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale NL tokenRegExps days (RRRR) should match to relative day names" name="date-parser, locale NL tokenRegExps days (RRRR) should match to relative day names" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="date-parser, locale HU" errors="0" failures="0" skipped="0" timestamp="2026-02-08T15:41:50" time="0.013" tests="14">
+    <testcase classname="date-parser, locale HU localizeRegExps (shortTime) should match to short time format, e.g.: 03:45" name="date-parser, locale HU localizeRegExps (shortTime) should match to short time format, e.g.: 03:45" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU localizeRegExps (mediumTime) should match to medium time format, e.g.: 03:45:23" name="date-parser, locale HU localizeRegExps (mediumTime) should match to medium time format, e.g.: 03:45:23" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU localizeRegExps (shortDate) should match to short date format, e.g.: 2016. 2. 3." name="date-parser, locale HU localizeRegExps (shortDate) should match to short date format, e.g.: 2016. 2. 3." time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale HU localizeRegExps (mediumDate) should match to medium date format, e.g.: 2016. Jan. 2." name="date-parser, locale HU localizeRegExps (mediumDate) should match to medium date format, e.g.: 2016. Jan. 2." time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU localizeRegExps (longDate) should match to long date format, e.g.: 2016. Január 2." name="date-parser, locale HU localizeRegExps (longDate) should match to long date format, e.g.: 2016. Január 2." time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU localizeRegExps (fullDate) should match to full date format, e.g.: 2016. Január 2., Hétfő" name="date-parser, locale HU localizeRegExps (fullDate) should match to full date format, e.g.: 2016. Január 2., Hétfő" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU localizeRegExps (short) should match to short date time format, e.g.: 2016. 2. 3. 03:45" name="date-parser, locale HU localizeRegExps (short) should match to short date time format, e.g.: 2016. 2. 3. 03:45" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU localizeRegExps (medium) should match to medium date time format, e.g.: 2016. Jan. 3. 03:45:23" name="date-parser, locale HU localizeRegExps (medium) should match to medium date time format, e.g.: 2016. Jan. 3. 03:45:23" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU tokenRegExps months (LLLL) should match to full month names" name="date-parser, locale HU tokenRegExps months (LLLL) should match to full month names" time="0.001">
+    </testcase>
+    <testcase classname="date-parser, locale HU tokenRegExps months (MMMM) should match to full month names" name="date-parser, locale HU tokenRegExps months (MMMM) should match to full month names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU tokenRegExps months (MMM) should match to short month names" name="date-parser, locale HU tokenRegExps months (MMM) should match to short month names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU tokenRegExps days (EEEE) should match to full day names" name="date-parser, locale HU tokenRegExps days (EEEE) should match to full day names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU tokenRegExps days (EEE) should match to short day names" name="date-parser, locale HU tokenRegExps days (EEE) should match to short day names" time="0">
+    </testcase>
+    <testcase classname="date-parser, locale HU tokenRegExps days (RRRR) should match to relative day names" name="date-parser, locale HU tokenRegExps days (RRRR) should match to relative day names" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="date-parser" errors="0" failures="0" skipped="0" timestamp="2026-02-08T15:41:50" time="0.042" tests="6">
+    <testcase classname="date-parser loadLocale() should throw an error if the desired locale is not exist" name="date-parser loadLocale() should throw an error if the desired locale is not exist" time="0.003">
+    </testcase>
+    <testcase classname="date-parser buildRegExp() should build a regular expression based on the given format" name="date-parser buildRegExp() should build a regular expression based on the given format" time="0.001">
+    </testcase>
+    <testcase classname="date-parser test() should recognize valid date by given format" name="date-parser test() should recognize valid date by given format" time="0.001">
+    </testcase>
+    <testcase classname="date-parser test() should recognize if a date is not valid by given format" name="date-parser test() should recognize if a date is not valid by given format" time="0">
+    </testcase>
+    <testcase classname="date-parser match() should match valid date by given format" name="date-parser match() should match valid date by given format" time="0">
+    </testcase>
+    <testcase classname="date-parser match() should not match if a date is not valid by given format" name="date-parser match() should not match if a date is not valid by given format" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

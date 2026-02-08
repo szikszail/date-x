@@ -1,0 +1,9 @@
+{
+  "entryPoints": [
+    "./src/index.ts",
+    "./src/assert/index.ts",
+    "./src/chai/index.ts"
+  ],
+  "out": "./docs",
+  "githubPages": true
+}

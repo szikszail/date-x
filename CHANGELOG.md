@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.0
+
+- Refactor to use TypeScript
+- Dependency updates
+
 ## 1.2.0
 
 - Added `buildRegExp` function to create RegExp from date format string
